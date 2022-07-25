@@ -4,13 +4,14 @@ const persona = {
     ocupacion: "Actor",
     edad: 53,
 }
+console.log 
 
 console.log(persona);
 
 console.log(persona.nombre);
 
 console.log(persona['nombre'])
-
+s
 
 const attributoNombre = 'nombre';
 console.log(persona[attributoNombre]);
