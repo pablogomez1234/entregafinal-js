@@ -1,29 +1,17 @@
-const persona = {
-    nombre:"will",
-    apellido: "smith",
-    ocupacion: "Actor",
-    edad: 53,
-}
-console.log 
+const listaSuper = [];
 
-console.log(persona);
+let entrada;
+do {
+  entrada = prompt('Ingrese un producto de la libreria. Ingrese FIN para terminar');
+  if (entrada != 'FIN') {
+    listaSuper.push(entrada);
+  }
+} while (entrada != 'FIN');
 
-console.log(persona.nombre);
 
-console.log(persona['nombre'])
-s
+alert('La lista tiene ' + listaSuper.length + ' productos.');
 
-const attributoNombre = 'nombre';
-console.log(persona[attributoNombre]);
+alert('La lista tiene:\n' + listaSuper.join('\n'));
 
-console.log('Antes', persona.edad);
-persona.edad = 52;
-persona['edad'= 50];
-console.log('Despues', persona.edad);
 
-persona.estatura = 1.80;
-
-console.log(persona);
-
-// constructores
 
