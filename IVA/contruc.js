@@ -34,6 +34,7 @@ class Producto {
     }
   }
   
+  
 
   const carrito = new Carrito();
   
