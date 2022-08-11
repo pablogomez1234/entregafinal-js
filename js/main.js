@@ -15,3 +15,9 @@ alert('La lista tiene:\n' + listaSuper.join('\n'));
 
 
 
+class Producto {
+  constructor(precio, cantidad) {
+    this.precio = parseFloat(precio);
+    this.cantidad = parseInt(cantidad);
+  }
+}

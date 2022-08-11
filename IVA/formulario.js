@@ -1,61 +1,53 @@
 
-// class Producto {
-//     constructor(precio, cantidad) {
-//       this.precio = parseFloat(precio);
-//       this.cantidad = parseInt(cantidad);
-//     }
+ class Producto {
+     constructor(precio, cantidad) {
+       this.precio = parseFloat(precio);
+       this.cantidad = parseInt(cantidad);
+     }
   
-//     calcularPrecioconIva() {
-//       return this.precio * 1.21 * this.cantidad;
-//     }
-//   }
-  
-
-//   class Carrito {
-//     constructor() {
-//       this.productos = [];
-//       this.total = 0;
-//     }
-  
-//     agregarProducto(precio, cantidad) {
-//       const producto = new Producto(precio, cantidad);
-//       this.productos.push(producto);
-//     }
-  
-//     calcularTotalconIva() {
-//       let total = 0;
-  
-//       for (const producto of this.productos) {
-//         total = total + producto.calcularPrecioconIva();
-//       }
-//       this.total = total;
-  
-//       return total;
-//     }
-//   }
-  
+     calcularPrecioconIva() {
+       return this.precio * 1.21 * this.cantidad;
+     }
+   }
   
 
-//   const carrito = new Carrito();
+   class Carrito {
+constructor() {
+       this.productos = [];
+this.total = 0;
+     }
   
-//   let precio;
-//   let cantidad;
-//   let continuar = false;
-//   do {
-    
-//     precio = prompt('Ingrese precio de producto');
-//     cantidad = prompt('Ingrese cantidad');
+     agregarProducto(precio, cantidad) {
+       const producto = new Producto(precio, cantidad);
+       this.productos.push(producto);
+     }
   
-    
-//     continuar = prompt('Quiere continuar ingresando valores? (y/N)') === 'y';
+     calcularTotalconIva() {
+       let total = 0;
   
-    
-//     carrito.agregarProducto(precio, cantidad);
-//   } while(continuar);
+       for (const producto of this.productos) {
+         total = total + producto.calcularPrecioconIva();
+       }
+       this.total = total;
+  
+       return total;
+     }
+   }
   
   
+   const carrito = new Carrito();
+     let precio;
+  let cantidad;   let continuar = false;
+  do {
+         precio = prompt('Ingrese precio de producto');     cantidad = prompt('Ingrese cantidad');
+  
+         continuar = prompt('Quiere continuar ingresando valores? (y/N)') === 'y';
 
-//   alert('El total a pagar es: ' + carrito.calcularTotalconIva());
+    carrito.agregarProducto(precio, cantidad);
+  } while(continuar);
+  
+  
+   alert('El total a pagar es: ' + carrito.calcularTotalconIva());
 
   //datos cliente 
 
