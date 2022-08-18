@@ -88,6 +88,15 @@ form.addEventListener('submit', (e) => {
   if (cliente.edad < 18) {
     const p = document.getElementById('mensaje-error');
     p.innerText = 'Tienes que ser mayor de 18 años para registrarte';
+    Toastify({
+      text:'Tienes que ser mayor de 18 años para registrarte',
+      duration: 5000,
+      gravity: 'top',
+      position: 'right',
+      style: {
+        background: 'linear-gradient(to right, #00b09b, #96c92d)'
+      } 
+    }).showToast();
     return;
   }
 

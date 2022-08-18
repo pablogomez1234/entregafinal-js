@@ -1,5 +1,4 @@
 
-
 Swal.fire({
   title: 'hola!',
   text: 'Bienvenido',
@@ -9,10 +8,13 @@ Swal.fire({
 });
 
 
- class Producto {
-  constructor(precio, cantidad) {
-    this.precio = parseFloat(precio);
-    this.cantidad = parseInt(cantidad);
-  } }
+Toastify({
+  text: 'nuevas promociones!',
+  duration: 3000,
+  gravity: 'bottom',
+  position: 'left'
+}).showToast();
+
+
 
 
