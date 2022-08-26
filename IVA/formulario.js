@@ -68,6 +68,15 @@ const agregarElementoATabla = (cliente) => {
   tabla.append(tr);
 }
 
+// fetch de un archivo json local.
+const getTiposDeProductos = async ( => {
+  const response = await fetch('./tipos.json');
+  const data = await response.json();
+
+  const select = document.getElementById('tipo');
+  select.innerHTML = data.map((tipo) => <option value="${tipo"
+})
+
 if (clientesParseado) {
   clientesParseado.forEach((cliente) => {
     agregarElementoATabla(cliente);
