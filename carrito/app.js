@@ -61,7 +61,7 @@ e.stopPropagation()
 
 
 const setCarrito = item => {
-	//console.log(objeto)
+	//ver cantidad de articulos)
 	const producto = {
 		title: item.querySelector('h5').textContent,
 		precio: item.querySelector('p').textContent,

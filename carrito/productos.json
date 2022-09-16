@@ -1,29 +1,29 @@
 [
 	{
-		"precio": 150,
+		"precio": 2000,
 		"id": 1,
-		"title": "Fideos",
+		"title": "Calculadora Casio",
 		"thumbnailUrl": "imgs/calculadora.webp"
 	},
 
 	{
-		"precio": 100,
+		"precio": 150,
 		"id": 2,
-		"title": "Pan",
+		"title": "Cuaderno Cuadriculado",
 		"thumbnailUrl": "imgs/cuadernos.webp"
 	},
 
 	{
 		"precio": 200,
 		"id": 3,
-		"title": "Salsa",
+		"title": "Fibras",
 		"thumbnailUrl": "imgs/fibras.webp"
 	},
 
 	{
-		"precio": 450,
+		"precio": 4500,
 		"id": 4,
-		"title": "Ñoquis",
+		"title": "Mochila MZ",
 		"thumbnailUrl": "imgs/mochila.webp"
 	}
 ]
